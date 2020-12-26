@@ -23,3 +23,6 @@ Except the first two are numerical values.
 
 There is no missing data or errors (NA etc) in this dataset.
 
+### Basic Distribution Graph 
+
+![alt stage1.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage1.png)
