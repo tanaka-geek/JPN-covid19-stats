@@ -1,0 +1,48 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+
+df = pd.read_csv('../covid_jpn_total.csv')
+
+df.info()
+
+    <class 'pandas.core.frame.DataFrame'>
+    RangeIndex: 931 entries, 0 to 930
+    Data columns (total 14 columns):
+    #   Column        Non-Null Count  Dtype  
+    ---  ------        --------------  -----  
+    0   Date          931 non-null    object 
+    1   Location      931 non-null    object 
+    2   Positive      931 non-null    int64  
+    3   Tested        915 non-null    float64
+    4   Symptomatic   241 non-null    float64
+    5   Asymptomatic  241 non-null    float64
+    6   Sym-unknown   241 non-null    float64
+    7   Hosp_require  690 non-null    float64
+    8   Hosp_mild     241 non-null    float64
+    9   Hosp_severe   931 non-null    int64  
+    10  Hosp_unknown  241 non-null    float64
+    11  Hosp_waiting  241 non-null    float64
+    12  Discharged    931 non-null    int64  
+    13  Fatal         931 non-null    int64  
+    dtypes: float64(8), int64(4), object(2)
+    memory usage: 102.0+ KB
+
+print(df.index)
+
+    DatetimeIndex(['2020-02-06', '2020-02-07', '2020-02-10', '2020-02-12',
+               '2020-02-13', '2020-02-14', '2020-02-17', '2020-02-18',
+               '2020-02-19', '2020-02-20',
+               ...
+               '2020-12-15', '2020-12-16', '2020-12-17', '2020-12-18',
+               '2020-12-19', '2020-12-20', '2020-12-21', '2020-12-22',
+               '2020-12-23', '2020-12-24'],
+              dtype='datetime64[ns]', name='Date', length=318, freq=None)
+
+
+良い例として
+seaborn.lineplot(x,y,data,hue,palette)
+
+Reference : https://www.journaldev.com/39342/seaborn-line-plot
+
+
