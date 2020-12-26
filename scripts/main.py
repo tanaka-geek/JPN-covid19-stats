@@ -19,7 +19,8 @@ ax.plot(df.index.values,
         df['Fatal'],
         linestyle="--",
         color='red',
-        label="Death Toll")
+        label="Death Toll",
+        )
 
 # Set title and labels for axes
 # ax.set(xlabel="Date",
@@ -40,7 +41,9 @@ plt.title('Total Covid-19 Cases in Japan')
 plt.xlabel("Date")
 plt.ylabel("Active Cases")
 
-
+# 線が足されるので、良い
+plt.grid()
+fig.tight_layout()
 plt.show()
 
 # fig, ax = plt.subplots(figsize=(10,10))
