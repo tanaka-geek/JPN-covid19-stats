@@ -26,3 +26,16 @@ There is no missing data or errors (NA etc) in this dataset.
 ### Basic Distribution Graph 
 
 ![alt stage1.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage1.png)
+
+
+## Stage 2 
+
+Compute Central Tendency and Variability Measures
+
+Central tendency
+
+
+
+
+
+

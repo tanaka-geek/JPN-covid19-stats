@@ -46,3 +46,40 @@ seaborn.lineplot(x,y,data,hue,palette)
 Reference : https://www.journaldev.com/39342/seaborn-line-plot
 
 
+month = df.resample(rule="M").mean()
+    Date
+    2020-02-29       69.263158
+    2020-03-31      646.451613
+    2020-04-30     6740.166667
+    2020-05-31     5826.387097
+    2020-06-30     1838.633333
+    2020-07-31     4590.612903
+    2020-08-31    12908.903226
+    2020-09-30     8162.133333
+    2020-10-31     6992.774194
+    2020-11-30    14508.033333
+    2020-12-31    27104.750000
+
+
+月ごとのデータを振り分けるには
+a = df.loc[datetime.date(year=2020,month=3,day=1):datetime.date(year=2020,month=4,day=1)]
+data = list(map(lambda x : df.loc[datetime.date(year=2020,month=x-1,day=1):datetime.date(year=2020,month=x,day=1)], range(1+1,12+1)))
+
+今データはこのようになっている
+data[0][day1,day2,day3...dayx]
+
+prefecture.csv
+
+    <bound method DataFrame.info of            Prefecture  Positive   Tested  Discharged  Fatal  Hosp_require  Hosp_severe
+    Date                                                                                  
+    2020-03-18   Hokkaido       154   1587.0        69.0    7.0           NaN          NaN
+    2020-03-18     Aomori         0     75.0         0.0    0.0           NaN          NaN
+    2020-03-18      Iwate         0     24.0         0.0    0.0           NaN          NaN
+    2020-03-18     Miyagi         1    138.0         1.0    0.0           NaN          NaN
+    2020-03-18      Akita         2    109.0         1.0    0.0           NaN          NaN
+    ...               ...       ...      ...         ...    ...           ...          ...
+    2020-12-23   Kumamoto      1516  31757.0      1256.0   15.0         156.0          4.0
+    2020-12-23       Oita       587  38839.0       505.0    5.0          77.0          4.0
+    2020-12-23   Miyazaki       677  11916.0       606.0    5.0          71.0          1.0
+    2020-12-23  Kagoshima       890  35196.0       795.0   13.0          95.0          1.0
+    2020-12-23    Okinawa      5047  84891.0      4689.0   80.0         283.0          5.0
