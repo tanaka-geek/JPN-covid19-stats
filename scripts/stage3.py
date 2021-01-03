@@ -24,8 +24,14 @@ nf = df2.merge(df3,left_on=('Prefecture'),right_on=('Prefecture'),how='inner',su
 
 nf = nf.drop(columns=['Area','Annual_Change','Est_Population','Female','Male'])
 
-print(nf)
+def corrmatrix(df):
+    corrMatrix = df.corr()
+    sns.heatmap(corrMatrix, annot=True)
+    plt.show()
 
-corrMatrix = nf.corr()
-sns.heatmap(corrMatrix, annot=True)
-plt.show()
+def scatterplot(x, y):
+    plt.scatter(x, y) # x and y as arguments
+    plt.show()
+
+scatterplot(nf['Positive'],nf['Tested'])
+

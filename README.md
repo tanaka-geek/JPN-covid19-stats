@@ -34,6 +34,30 @@ Compute Central Tendency and Variability Measures
 
 Central tendency
 
+## Stage 3
+
+Compute correlation matrix. 
+
+![alt stage1.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage3.png)
+
+### Correlation Analysis
+
+Correlated variables are the following
+
+-  `Fatal` and `Hosp_require` 
+-  `Positive` and `Population` 
+
+`Fatal` and `Hosp_require` are correlated since the more people are in severe infected condition, the fatality cases are likely to increase.
+
+`Positive` and `Population` are also correlated because the more population means higher probablity of infection. 
+
+However, it is observable that `Hosp_severe` is only correlated with `Fatal` and shares lower correlation rate with other variables.
+
+Presumably, Severe cases on covid-19 is due to the fact that although many population can be infected, only minority number of the infected experience severe cases because of factors such as their age, pre-medical condition and limited treatment in the hospital.
+
+Therefore, `Hosp_severe` is indepent variable except with `Fatal`.
+
+
 
 
 
