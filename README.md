@@ -117,7 +117,7 @@ The Linear Model's performance for testing:
 - MAPE:  39.87470903917527
 
 The graph analysis 
-![alt stage5.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage5_1.png)
+![alt stage5.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage5_2.png)
 
 The Polynomial Model's performance for training:
 
