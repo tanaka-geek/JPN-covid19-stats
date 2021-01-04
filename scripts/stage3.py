@@ -22,6 +22,7 @@ nf = df2.merge(df3,left_on=('Prefecture'),right_on=('Prefecture'),how='inner',su
 #  'Capital', 'Male','Female', 'Annual_Change',
 #  'Est_Population','Discharged','Area'])
 
+
 nf = nf.drop(columns=['Area','Annual_Change','Est_Population','Female','Male'])
 
 def corrmatrix(df):

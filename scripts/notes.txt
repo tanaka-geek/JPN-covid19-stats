@@ -83,3 +83,25 @@ prefecture.csv
     2020-12-23   Miyazaki       677  11916.0       606.0    5.0          71.0          1.0
     2020-12-23  Kagoshima       890  35196.0       795.0   13.0          95.0          1.0
     2020-12-23    Okinawa      5047  84891.0      4689.0   80.0         283.0          5.0
+
+
+
+Linear Regression Coefficients: [0.00162564]
+Linear Regression Intercept: 74.24444885334512
+
+The linear model performance for training set
+RMSE is 35.755953979357685
+R2 score is 0.8491951960374975
+
+The linear model performance for testing set
+RMSE is 31.36388399092678
+R2 score is 0.8816123287196085
+MAPE:  39.87470903917527
+
+The polynomial model performance for the training set
+RMSE of training set is 21.040343639302094
+R2 score of training set is 0.9477815358294585
+The polynomial model performance for the test set
+RMSE of test set is 17.514006809561216
+R2 score of test set is 0.9630837287177351
+MAPE:  18.110589685632135

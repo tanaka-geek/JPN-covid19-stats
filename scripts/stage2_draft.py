@@ -7,7 +7,7 @@ import calendar
 from meta import *
 
 # Date now has become index
-df = pd.read_csv('../covid_jpn_domestic_total.csv',  
+df = pd.read_csv('../datasets/covid_jpn_domestic_total.csv',  
                  parse_dates=['Date'],
                  index_col=['Date']
 )

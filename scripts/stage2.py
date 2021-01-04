@@ -7,7 +7,7 @@ import calendar
 from meta import *
 
 # Date now has become index
-df = pd.read_csv('../covid_jpn_prefecture.csv',  
+df = pd.read_csv('../datasets/covid_jpn_prefecture.csv',  
                  parse_dates=['Date'],
                  index_col=['Date']
 )
@@ -37,10 +37,6 @@ mode_data = mode_data
 mean_value = mean_data.Positive
 median_value =median_data.Positive
 mode_value = mode_data.Positive[0]
-
-# fig1, ax1 = plt.subplots()
-# Boxplot for mean,median and mode
-#sns.boxenplot(data=data['Positive'])
 
 f, (ax_box, ax_hist) = plt.subplots(2, sharex=True, gridspec_kw= {"height_ratios": (0.2, 1)})
 
