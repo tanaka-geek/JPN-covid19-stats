@@ -103,6 +103,8 @@ Linear Regression coefficient was calculated as `0.00162564`
 
 RMSE, R2's value and MAPE are calculated respectively.
 
+Root Mean Square Error is higher in Linear Model since there's considerable deviation in predicted values. Mean Absolute Percentage Error is significantly lower in the Polynomial Model because of the dataset with 80% pf R-squared percentage. 
+
 The Linear Model's performance for training:
 
 - RMSE : 35.755953979357685
@@ -114,6 +116,9 @@ The Linear Model's performance for testing:
 - R2 : 0.8816123287196085
 - MAPE:  39.87470903917527
 
+The graph analysis 
+![alt stage5.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage5_1.png)
+
 The Polynomial Model's performance for training:
 
 - RMSE : 21.040343639302094
@@ -124,3 +129,26 @@ The Polynomial Model's performatnce for testing:
 - RMSE :17.514006809561216
 - R2 :0.9630837287177351
 - MAPE: : 18.110589685632135
+
+![alt stage3.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/Stage5_4.png)
+
+
+Redisual Plot 
+
+Residuals in regression models are basically the difference between the observed value of the target variable `Positive` and the predicted value `Date` in this case.
+
+The Linear Model's Performance on Redisual Compulation
+
+![alt stage3.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/residual_1.png)
+
+
+The Polynomial Model's Performance on Redisual Compulation
+
+
+![alt stage3.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/residual_2.png)
+
+
+Deviation between Training and Testing in Residuals Plot
+
+
+![alt stage3.png](https://github.com/mr-wacker/statistics-probablity-project/blob/master/img/diff.png)
