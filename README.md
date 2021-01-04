@@ -87,7 +87,8 @@ However, straight regression line is not able to calculate the patterns which in
 
 The model is trained with 70-30 ratio.
 
-According to the different types of regression models used for the analysis, the R-squared gets the value around 0.80~. This seems fine as the metrics not being 100%.
+According to the different types of regression models used for the analysis, the R-squared gets the value around 0.80~. This almost represents a model that explains all of the variation in the response variable around its mean.
+
 
 Various analysis are conducted by using Linear and Polynomial Regression Models.
 The x variable is `Positive` and `Date` (Dataframe Date's Index Values)
@@ -100,9 +101,26 @@ Y = df.index.values
 
 Linear Regression coefficient was calculated as `0.00162564`
 
+RMSE, R2's value and MAPE are calculated respectively.
+
 The Linear Model's performance for training:
 
 - RMSE : 35.755953979357685
 - R2 : 0.8491951960374975
 
 The Linear Model's performance for testing:
+
+- RMSE : 31.36388399092678
+- R2 : 0.8816123287196085
+- MAPE:  39.87470903917527
+
+The Polynomial Model's performance for training:
+
+- RMSE : 21.040343639302094
+- R2 : 0.9477815358294585
+
+The Polynomial Model's performatnce for testing: 
+
+- RMSE :17.514006809561216
+- R2 :0.9630837287177351
+- MAPE: : 18.110589685632135
