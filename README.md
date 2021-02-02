@@ -1,8 +1,6 @@
-# statistics-probablity-project
+# Japan covid-19 correlation matrix analysis 
 
-## Stage 1 
-
-### The topic of this data science project 
+## Stage 1  
 
 The dataset is obtained from [kaggle](https://www.kaggle.com/lisphilar/covid19-dataset-in-japan?select=covid_jpn_metadata.csv)
 
